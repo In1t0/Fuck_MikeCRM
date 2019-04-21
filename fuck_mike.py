@@ -2,7 +2,6 @@
 import re
 import io
 import time
-import self
 import jieba
 from selenium import webdriver
 
@@ -27,7 +26,7 @@ print url
 
 #打开网址
 bs.get(url)
-#html = bs.page_source
+
 print (u'==================================================\n继续运行请输入 1 ')
 panduan = input()
 if panduan == 1:
@@ -48,9 +47,6 @@ if panduan == 1:
     f = io.open('./result.txt','r',encoding='utf-8')
     str = f.read()
     f.close()
-
-    #head, sep, tail = str.partition(u'请') #删除请后面的内容
-    #print head
 
     #读取一个字典
     jieba.load_userdict("./zidian.txt")
