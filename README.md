@@ -1,5 +1,6 @@
-# Fuck_MikeCRM
-#JadeTwan
+# Fuck_MikeCRM  
+**@JadeTwan**  
+**1.1版本绕过了某些表单只能在微信里填写的限制，改进了文本框的定位方式。**  
 想要活动章，但是手速不行？ 想参加活动，但是大部分名额被工作人员内定？ 现在只要是Powered by MikeCRM的表单，大部分都能被自动的填写啦！ 如果可以的话，请传播它！
 
 **请先安装jieba和selenium**  
