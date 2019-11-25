@@ -7,11 +7,21 @@
 想要活动章，但是手速不行？ 想参加活动，但是大部分名额被工作人员内定？ 现在只要是Powered by MikeCRM的表单，大部分都能被自动的填写啦！ 如果可以的话，请传播它！<br>
 
 **请先安装jieba和selenium**  <br>
-**将geckodriver复制或移动至/usr/bin下，并赋予运行权限。<br>
+**将geckodriver复制或移动至/usr/bin下，并赋予运行权限。**<br>
 使用python2.7  <br>
-		**用法**   
+```bash
+$ python fuck_mikeCRM-2.py 
+usage: python2.7 fuck_mikeCRM-2.py [-h] [-u URL] [-A AUTO] [-t TIME]
+
+FuckingMikeCRM!
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -u URL      目标麦克表单地址
+  -A AUTO     -A y 启用自动提交
+  -t TIME     程序启动时间,可以精确到秒哦.格式12:00或12:00:00
+```
   
-python fuck_mike.py  -u 目标麦克表单地址
 //之后会打开firefox浏览器，然后进入表单页面。  
 --Building prefix dict from the default dictionary ...  
 --Loading model from cache /tmp/jieba.cache  
@@ -27,5 +37,3 @@ python fuck_mike.py  -u 目标麦克表单地址
 --QQ:XXXXXXXX  
 --辅导员:XXX  
   
-//未添加自动提交功能，需要的同学请自行添加。
-//或者等待下次更新......
