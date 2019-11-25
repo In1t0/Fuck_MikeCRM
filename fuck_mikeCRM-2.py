@@ -128,13 +128,12 @@ if __name__ == '__main__':
                 bs.get(url)
                 GetSourceAutoSubmit()
         else :
-            if (autoSubmit == 'n'):
-                if '-t' in sys.argv:
-                    GetTime()
-                    bs = webdriver.Firefox(firefox_profile=profiel)
-                    bs.get(url)
-                    GetSource()
-                else:
-                    bs = webdriver.Firefox(firefox_profile=profiel)
-                    bs.get(url)
-                    GetSource()
+            if '-t' in sys.argv:
+                GetTime()
+                bs = webdriver.Firefox(firefox_profile=profiel)
+                bs.get(url)
+                GetSource()
+            else:
+                bs = webdriver.Firefox(firefox_profile=profiel)
+                bs.get(url)
+                GetSource()
